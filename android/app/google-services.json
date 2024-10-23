@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "277435073772",
+    "project_id": "cg-power",
+    "storage_bucket": "cg-power.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277435073772:android:302e9a8c1caf6d99b991c9",
+        "android_client_info": {
+          "package_name": "com.crompton.greaves"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn0Hi88gWHb81o4OPV667F_2_ed-Db-N0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
