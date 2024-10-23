@@ -36,7 +36,7 @@ import {
   setAutoApproval,
   setRegistrationRequired,
   setAppVersion,
-  setLocationSetup
+  setLocationSetup,
 } from "../../../redux/slices/appUserSlice";
 import { setPointSharing } from "../../../redux/slices/pointSharingSlice";
 import { useIsFocused } from "@react-navigation/native";
@@ -102,6 +102,7 @@ import { useInternetSpeedContext } from "../../Contexts/useInternetSpeedContext"
 import { setSlowNetwork } from "../../../redux/slices/internetSlice";
 import { apiFetchingInterval } from "../../utils/apiFetchingInterval";
 import { splash } from "../../utils/HandleClientSetup";
+import FastImage from "react-native-fast-image";
 
 const Splash = ({ navigation }) => {
   const dispatch = useDispatch();
@@ -132,9 +133,7 @@ const Splash = ({ navigation }) => {
     // console.log("current version check", currentVersion);
     dispatch(setAppVersion(currentVersion));
   }
-  const gifUri = Image.resolveAssetSource(
-    splash
-  ).uri;
+  const gifUri = Image.resolveAssetSource(splash).uri;
   // generating functions and constants for API use cases---------------------
   const [
     getAppTheme,
@@ -255,7 +254,7 @@ const Splash = ({ navigation }) => {
   useEffect(() => {
     getUsers();
 
-    console.log("currentVersion", currentVersion,isConnected.isConnected);
+    console.log("currentVersion", currentVersion, isConnected.isConnected);
     if (isConnected.isConnected) {
       getMinVersionSupportFunc(currentVersion);
     }
@@ -265,7 +264,7 @@ const Splash = ({ navigation }) => {
       const params = {
         type: "term-and-condition",
       };
-      console.log("getTermsAndCondition", params)
+      console.log("getTermsAndCondition", params);
       getTermsAndCondition(params);
     };
     fetchTerms();
@@ -281,12 +280,17 @@ const Splash = ({ navigation }) => {
     fetchPolicies();
   }, []);
 
+  
+
   useEffect(() => {
     if (getTermsData) {
-      console.log("getTermsDataasdasdasd", getTermsData.body.data?.[0]?.files[0]);
+      console.log(
+        "getTermsDataasdasdasd",
+        getTermsData.body.data?.[0]?.files[0]
+      );
       dispatch(setTerms(getTermsData.body.data?.[0]?.files[0]));
     } else if (getTermsError) {
-      console.log("gettermserror", getTermsError)
+      console.log("gettermserror", getTermsError);
     }
   }, [getTermsData, getTermsError]);
 
@@ -336,14 +340,14 @@ const Splash = ({ navigation }) => {
                 );
                 console.log(
                   "navigate to dashboard error",
-                ( !__DEV__ && minVersionSupport),
+                  !__DEV__ && minVersionSupport,
                   jsonValue,
                   getDashboardData,
                   getWorkflowData
                 );
 
                 getFormData &&
-                ( !__DEV__ ? minVersionSupport : true) &&
+                  (!__DEV__ ? minVersionSupport : true) &&
                   jsonValue &&
                   getDashboardData &&
                   getWorkflowData &&
@@ -407,21 +411,21 @@ const Splash = ({ navigation }) => {
 
         console.log(
           "navigate to dashboard error",
-          ( !__DEV__ ? minVersionSupport : true) ,
+          !__DEV__ ? minVersionSupport : true,
           getAppMenuData,
           getDashboardData,
           getWorkflowData
         );
 
         getFormData &&
-        ( !__DEV__ ? minVersionSupport : true)  &&
+          (!__DEV__ ? minVersionSupport : true) &&
           getAppMenuData &&
           getDashboardData &&
           getWorkflowData &&
           navigation.reset({ index: "0", routes: [{ name: "Dashboard" }] });
       }
     } else if (getAppMenuError) {
-      console.log("getAppMenuError", getAppMenuError)
+      console.log("getAppMenuError", getAppMenuError);
     }
   }, [getAppMenuData, getAppMenuError]);
 
@@ -446,18 +450,17 @@ const Splash = ({ navigation }) => {
       const getData = async () => {
         try {
           const value = await AsyncStorage.getItem("appDashboard");
-          const jsonValue = JSON.parse(value)
+          const jsonValue = JSON.parse(value);
           if (jsonValue != null) {
             const getCurrentTimeInMilliSecond = new Date().getTime();
             if (
               getCurrentTimeInMilliSecond - lastFetchedApiOn >
               apiFetchingInterval
-            ){
+            ) {
               dispatch(setWarrantyForm(getFormData?.body?.template));
-            dispatch(setWarrantyFormId(getFormData?.body?.form_template_id));
-            parsedJsonValue && getDashboardFunc(parsedJsonValue?.token);
-            }
-            else{
+              dispatch(setWarrantyFormId(getFormData?.body?.form_template_id));
+              parsedJsonValue && getDashboardFunc(parsedJsonValue?.token);
+            } else {
               if (parsedJsonValue) {
                 const getData = async () => {
                   try {
@@ -470,9 +473,8 @@ const Splash = ({ navigation }) => {
                         getCurrentTimeInMilliSecond - lastFetchedApiOn >
                         apiFetchingInterval
                       ) {
-                        
-        
-                        parsedJsonValue && getAppMenuFunc(parsedJsonValue?.token);
+                        parsedJsonValue &&
+                          getAppMenuFunc(parsedJsonValue?.token);
                       } else {
                         console.log("data already present saving appmenu");
                         dispatch(setDrawerData(jsonValue));
@@ -481,9 +483,7 @@ const Splash = ({ navigation }) => {
                         dispatch(setAppUserType(parsedJsonValue.user_type));
                         dispatch(setUserData(parsedJsonValue));
                         dispatch(setId(parsedJsonValue.id));
-                        dispatch(
-                          setDashboardData(jsonValue)
-                        );
+                        dispatch(setDashboardData(jsonValue));
                         console.log(
                           "navigate to dashboard error",
                           minVersionSupport,
@@ -491,10 +491,9 @@ const Splash = ({ navigation }) => {
                           jsonValue,
                           getWorkflowData
                         );
-        
-                        getFormData &&
-                        ( !__DEV__ ? minVersionSupport : true) 
-                          jsonValue &&
+
+                        getFormData && (!__DEV__ ? minVersionSupport : true);
+                        jsonValue &&
                           jsonValue &&
                           getWorkflowData &&
                           navigation.reset({
@@ -509,18 +508,21 @@ const Splash = ({ navigation }) => {
                       dispatch(setAppUserType(parsedJsonValue.user_type));
                       dispatch(setUserData(parsedJsonValue));
                       dispatch(setId(parsedJsonValue.id));
-                      dispatch(setDashboardData(getDashboardData?.body?.app_dashboard));
+                      dispatch(
+                        setDashboardData(getDashboardData?.body?.app_dashboard)
+                      );
                       setShowLoading(false);
-        
+
                       parsedJsonValue && getAppMenuFunc(parsedJsonValue?.token);
                     }
                   } catch (e) {
-                    console.warn("Error in fetching appDashboard async value", e);
+                    console.warn(
+                      "Error in fetching appDashboard async value",
+                      e
+                    );
                   }
                 };
                 getData();
-        
-               
               }
             }
           } else {
@@ -529,7 +531,7 @@ const Splash = ({ navigation }) => {
             parsedJsonValue && getDashboardFunc(parsedJsonValue?.token);
           }
         } catch (e) {
-          console.warn("Problem in fetching appDashboard")
+          console.warn("Problem in fetching appDashboard");
         }
       };
       getData();
@@ -773,7 +775,7 @@ const Splash = ({ navigation }) => {
           }
         },
         {
-          enableHighAccuracy:true
+          enableHighAccuracy: true,
         }
       );
     } catch (e) {}
@@ -781,7 +783,7 @@ const Splash = ({ navigation }) => {
 
   useEffect(() => {
     getUsers();
-    getAppTheme("cg");
+    getAppTheme("atomberg");
     const checkToken = async () => {
       const fcmToken = await messaging().getToken();
       if (fcmToken) {
@@ -868,7 +870,7 @@ const Splash = ({ navigation }) => {
     dispatch(setAppVersion(currentVersion));
 
     getMinVersionSupportFunc(currentVersion);
-    getAppTheme("cg");
+    getAppTheme("atomberg");
     getData();
   }, [isConnected, locationStatusChecked]);
 
@@ -958,11 +960,11 @@ const Splash = ({ navigation }) => {
       // console.log("isAlreadyIntroduced",isAlreadyIntroduced)
     } else {
       setShowLoading(false);
-      console.log("minVersionSupport while login",minVersionSupport)
-      __DEV__&& setMinVersionSupport(true);
+      console.log("minVersionSupport while login", minVersionSupport);
+      __DEV__ && setMinVersionSupport(true);
 
       if (value === "Yes") {
-     navigation.navigate("SelectUser");
+        navigation.navigate("SelectUser");  //uncomment
       } else {
         navigation.navigate("Introduction");
       }
@@ -975,9 +977,12 @@ const Splash = ({ navigation }) => {
   // fetching data and checking for errors from the API-----------------------
   useEffect(() => {
     if (getAppThemeData) {
-      console.log("getAppThemeData", JSON.stringify(getAppThemeData?.body))
-      dispatch(setLocationSetup(getAppThemeData?.body?.location))
-      console.log("dispatching locaion setup data",getAppThemeData?.body?.location)
+      console.log("getAppThemeData", JSON.stringify(getAppThemeData?.body));
+      dispatch(setLocationSetup(getAppThemeData?.body?.location));
+      console.log(
+        "dispatching locaion setup data",
+        getAppThemeData?.body?.location
+      );
       dispatch(
         setPrimaryThemeColor(getAppThemeData?.body?.theme?.color_shades["600"])
       );
@@ -1118,51 +1123,27 @@ const Splash = ({ navigation }) => {
 
   // console.log("internet connection status",connected)
   return (
-    <ImageBackground
-      resizeMode="stretch"
-      style={{
-        height: "100%",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-      source={splash}
-    >
-      <InternetModal visible={!connected} comp={NoInternetComp} />
-      {isSlowInternet && (
-        <InternetModal visible={isSlowInternet} comp={SlowInternetComp} />
-      )}
-
-      {error && (
+ 
+    <View>
+       <FastImage
+        style={{ width: "100%", height: "100%", }}
+        source={{
+          uri: gifUri, // Update the path to your GIF
+          priority: FastImage.priority.normal,
+        }}
+        resizeMode={FastImage.resizeMode.cover}
+      />
+           {error && (
         <ErrorModal
           modalClose={modalClose}
           message={message}
           openModal={error}
         ></ErrorModal>
       )}
-      {/* <Image  style={{ width: 200, height: 200,  }}  source={require('../../../assets/gif/ozonegif.gif')} /> */}
-      {
-        <View style={{ position: "absolute", bottom: 30, height: 40 }}>
-          <View>
-            {/* {loading ? (
-        <Text>Loading...</Text>
-      ) : (
-        
-        <Text>Response Time: {responseTime} ms</Text>
-      )} */}
-          </View>
-          <ActivityIndicator
-            size={"medium"}
-            animating={true}
-            color={MD2Colors.yellow800}
-          />
-          <PoppinsTextMedium
-            style={{ color: "white", marginTop: 4 }}
-            content="Please Wait"
-          ></PoppinsTextMedium>
-        </View>
-      }
-    </ImageBackground>
+
+    </View>
+
+
   );
 };
 

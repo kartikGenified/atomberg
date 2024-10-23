@@ -159,7 +159,7 @@ const QrCodeScanner = ({ navigation, route }) => {
     ? useSelector((state) => state.apptheme.ternaryThemeColor)
     : "grey";
   const gifUri = Image.resolveAssetSource(
-    require("../../../assets/gif/cgLoader.gif")
+    require("../../../assets/gif/atomLoader.gif")
   ).uri;
   const dispatch = useDispatch();
   Sound.setCategory('Playback');

@@ -15,6 +15,7 @@ import { t } from 'i18next';
 import { ActivityIndicator, MD2Colors } from "react-native-paper";
 import hideUserFromLogin from '../../utils/hideUserFromLogin';
 import { splash } from '../../utils/HandleClientSetup';
+import FastImage from 'react-native-fast-image';
 
 
 
@@ -42,6 +43,8 @@ const SelectUser = ({navigation}) => {
   
 
   const icon = useSelector(state => state.apptheme.icon)
+  const gifUri = Image.resolveAssetSource(splash).uri;
+
 
 
     const otpLogin = useSelector(state => state.apptheme.otpLogin)
@@ -253,7 +256,7 @@ const SelectUser = ({navigation}) => {
           </View>
         </ScrollView>
         <View style={{alignItems:'center',justifyContent:'space-between',flexDirection:'row',width:'100%',padding:10}}>
-        <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row'}}>
+        {/* <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row'}}>
             <View style={{backgroundColor:'#80C343',padding:4}}>
             <PoppinsTextMedium style={{color:'white',fontSize:24,fontWeight:'bold'}} content= "CG "></PoppinsTextMedium>
             </View>
@@ -261,41 +264,23 @@ const SelectUser = ({navigation}) => {
           <PoppinsTextMedium style={{color:'white',fontSize:24,fontWeight:'bold'}} content= "Vishwas"></PoppinsTextMedium>
             
             </View>
-        </View>
-        <View style={{alignItems:'center',justifyContent:'center'}}>
+        </View> */}
+        {/* <View style={{alignItems:'center',justifyContent:'center'}}>
           <Image style={{height:80,width:110,resizeMode:'contain'}} source={require('../../../assets/images/murugappa_logo.jpg')}></Image>
-        </View>
+        </View> */}
         </View>
         <PoppinsTextMedium style={{color:'black',fontSize:12,marginTop:4,marginBottom:10}} content="Designed and developed by Genefied"></PoppinsTextMedium>
 
       </LinearGradient>
       :
-      <ImageBackground
-      resizeMode="contain"
-      style={{
-        height: "100%",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
+      <FastImage
+      style={{ width: "100%", height: "100%", }}
+      source={{
+        uri: gifUri, // Update the path to your GIF
+        priority: FastImage.priority.normal,
       }}
-      source={splash}
-    >
-        <View style={{ position: "absolute", bottom: 70, height: 70 }}>
-        <PoppinsTextMedium stytle={{color:'#DDDDDD',fontWeight:'800',fontSize:30,marginBottom:20}} content ="Preparing your login experience..."></PoppinsTextMedium>
-
-          <ActivityIndicator
-          style={{marginTop:10}}
-            size={"medium"}
-            animating={true}
-            color={MD2Colors.yellow800}
-          />
-          <PoppinsTextMedium
-            style={{ color: "white", marginTop: 4 }}
-            content="Please Wait"
-          ></PoppinsTextMedium>
-        </View>
-      
-    </ImageBackground>
+      resizeMode={FastImage.resizeMode.cover}
+    />
       }
     
     

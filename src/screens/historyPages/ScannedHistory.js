@@ -31,7 +31,7 @@ const ScannedHistory = ({ navigation }) => {
   const [limit, setLimit] = useState(20)
 
   const gifUri = Image.resolveAssetSource(
-    require("../../../assets/gif/cgLoader.gif")
+    require("../../../assets/gif/atomLoader.gif")
   ).uri;
 
   const [

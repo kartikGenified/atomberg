@@ -138,13 +138,14 @@ const ImageGallery = ({ navigation }) => {
         backgroundColor: "white",
         height: '100%',
       }}>
+        
       <View
         style={{
           alignItems: 'center',
           justifyContent: 'flex-start',
           flexDirection: 'row',
           width: '100%',
-          marginTop: 10,
+          // marginTop: 10,
           height: '8%',
           marginLeft: 20,
         }}>
@@ -180,6 +181,13 @@ const ImageGallery = ({ navigation }) => {
             source={appIcon}
           ></Image>
       </View>
+      {
+              !appGalleryIsLoading && Object.keys(imageData).length == 0 && 
+              <View style={{width:'100%',height:"100%"}}>
+              <DataNotFound></DataNotFound>
+              </View>
+            }
+
       <ScrollView style={{ width: '100%', height: '90%' }}>
 
 
@@ -214,13 +222,7 @@ const ImageGallery = ({ navigation }) => {
 
 
           </View>
-          {
-              !appGalleryIsLoading && Object.keys(imageData).length == 0 && 
-              <View style={{width:'80%',alignItems:'center',justifyContent:'center',borderRadius:30,height:600}}>
-              <DataNotFound></DataNotFound>
-              </View>
-            }
-
+       
           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
             {
               appGalleryIsLoading && <FastImage

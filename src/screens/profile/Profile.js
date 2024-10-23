@@ -222,7 +222,7 @@ const Profile = ({ navigation }) => {
     getActiveMembershipData && getActiveMembershipData.body?.tier.name;
   const accountVerified = !Object.values(kycData).includes(false);
   const gifUri = Image.resolveAssetSource(
-    require("../../../assets/gif/cgLoader.gif")
+    require("../../../assets/gif/atomLoader.gif")
   ).uri;
 
   const ProfileBox = (props) => {
@@ -327,7 +327,7 @@ const Profile = ({ navigation }) => {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-evenly",
-          backgroundColor: "#a4d478",
+          backgroundColor: ternaryThemeColor,
           borderBottomWidth: 1,
           borderColor: "#DDDDDD",
         }}
@@ -344,7 +344,7 @@ const Profile = ({ navigation }) => {
             source={require("../../../assets/images/mobileBlack.png")}
           ></Image>
           <PoppinsTextMedium
-            style={{ color: "black", marginLeft: 8,fontSize:16,fontWeight:'600' }}
+            style={{ color: "white", marginLeft: 8,fontSize:16,fontWeight:'600' }}
             content={fetchProfileData.body?.mobile}
           ></PoppinsTextMedium>
         </View>

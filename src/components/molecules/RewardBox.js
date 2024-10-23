@@ -11,7 +11,12 @@ const RewardBox = () => {
     const workflow = useSelector(state => state.appWorkflow.program)
     const id = useSelector(state => state.appusersdata.id);
 
-    const gifUri = Image.resolveAssetSource(require('../../../assets/gif/cgLoader.gif')).uri;
+
+    const ternaryThemeColor = useSelector(
+        (state) => state.apptheme.ternaryThemeColor
+      )
+
+    const gifUri = Image.resolveAssetSource(require('../../../assets/gif/atomLoader.gif')).uri;
     const {t} = useTranslation();
 
 
@@ -49,7 +54,7 @@ const RewardBox = () => {
 
     console.log(workflow)
     return (
-        <View style={{ padding: 4, width: '100%', borderRadius: 14, elevation: 4, backgroundColor: '#80C343', height: 170 }}>
+        <View style={{ padding: 4, width: '100%', borderRadius: 14, elevation: 4, backgroundColor: ternaryThemeColor, height: 170 }}>
 
 
             {userPointIsLoading &&

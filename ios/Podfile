@@ -58,7 +58,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'CGPower' do
+target 'atomberg' do
   config = use_native_modules!
 
 
@@ -80,7 +80,7 @@ target 'CGPower' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'CGPowerTests' do
+  target 'atombergTests' do
     inherit! :complete
     # Pods for testing
   end

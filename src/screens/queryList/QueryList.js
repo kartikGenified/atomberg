@@ -193,9 +193,9 @@ const QueryList = ({ navigation }) => {
             <Plus name="pluscircle" size={50} color={ternaryThemeColor}></Plus>
           </TouchableOpacity>
         </View>
-        <View style={{alignItems:'center',justifyContent:'center',position:'absolute',bottom:4,left:30}}>
+        {/* <View style={{alignItems:'center',justifyContent:'center',position:'absolute',bottom:4,left:30}}>
           <Image style={{height:80,width:110,resizeMode:'contain'}} source={require('../../../assets/images/murugappa_logo.jpg')}></Image>
-        </View>
+        </View> */}
         </View>
     );
 };

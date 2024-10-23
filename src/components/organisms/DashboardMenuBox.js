@@ -37,8 +37,9 @@ const DashboardMenuBox=(props)=>{
         if(data.substring(0,4).toLowerCase()==="scan" )
         {
           //  Platform.OS == 'android' ? navigation.navigate('EnableCameraScreen') : requiresLocation ? navigation.navigate('EnableLocationScreen',{navigateTo:"QrCodeScanner"}) : navigation.navigate("QrCodeScanner")
-          setModal2(true)
-          setSelectedTab("scan")
+          navigation.navigate("EnableCameraScreen", {
+            scan_type: "QR",
+          })
         }
         else if(data.toLowerCase()==="passbook")
         {
@@ -99,7 +100,7 @@ const DashboardMenuBox=(props)=>{
     }
 
     return(
-        <View style={{borderColor:'#DDDDDD',borderRadius:10,borderWidth:1.2,width:width-20,alignItems:"center",justifyContent:"center",backgroundColor:'#80C343',padding:4,marginBottom:30}}>
+        <View style={{borderColor:'#DDDDDD',borderRadius:10,borderWidth:1.2,width:width-20,alignItems:"center",justifyContent:"center",backgroundColor:ternaryThemeColor,padding:4,marginBottom:30}}>
         <View style={{width:'100%',flexWrap:"wrap",flexDirection:"row",alignItems:"center",justifyContent:'center'}}>
         {
             data.map((item,index)=>{

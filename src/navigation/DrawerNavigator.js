@@ -242,7 +242,11 @@ const CustomDrawer = () => {
                   : navigation.navigate("QrCodeScanner");
               } else if (props.title.toLowerCase() === "passbook") {
                 navigation.navigate("Passbook");
-              } else if (props.title.toLowerCase() === "rewards") {
+              } 
+              else if (props.title.toLowerCase() === "media") {
+                navigation.navigate("WhatsNew");
+              }
+              else if (props.title.toLowerCase() === "rewards") {
                 navigation.navigate("RedeemRewardHistory");
               } else if (props.title.toLowerCase() === "gift catalogue") {
                 navigation.navigate("GiftCatalogue");

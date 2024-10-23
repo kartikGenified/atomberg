@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		005EFA06328442D69CFD157C /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6BB490790024A1D944512E3 /* Poppins-BlackItalic.ttf */; };
-		00E356F31AD99517003FC87E /* CGPowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CGPowerTests.m */; };
+		00E356F31AD99517003FC87E /* atombergTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* atombergTests.m */; };
 		0B5E7FD736894E34B199C899 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEAC1C540BDA408D917124E6 /* Poppins-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -17,10 +17,10 @@
 		4EFCF9E930664BFA94C8D88A /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2621FF15BCC64D26969A75F2 /* Poppins-Light.ttf */; };
 		52BE06121C0C407690BF4A90 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B8BF0838049D291ECD299 /* Poppins-Regular.ttf */; };
 		5310FE2A2C8999B300B534C9 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 5310FE292C8999B300B534C9 /* main.jsbundle */; };
-		5C5E38DD9D034A7EC1638642 /* Pods_CGPower_CGPowerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31D36F4E1420DB71718A066 /* Pods_CGPower_CGPowerTests.framework */; };
+		5C5E38DD9D034A7EC1638642 /* Pods_atomberg_atombergTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31D36F4E1420DB71718A066 /* Pods_atomberg_atombergTests.framework */; };
 		6236900152AB4189B2E322BD /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7146FCA9701416BBB4981A0 /* Poppins-ThinItalic.ttf */; };
 		6EE2AB2C70474C17B24BDBD3 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF597A940C684E27BC749E32 /* Poppins-ExtraBoldItalic.ttf */; };
-		79DA81BD78AD3DD0C5C919A9 /* Pods_CGPower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6FCA42CDB4A2F3956FDE9A /* Pods_CGPower.framework */; };
+		79DA81BD78AD3DD0C5C919A9 /* Pods_atomberg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6FCA42CDB4A2F3956FDE9A /* Pods_atomberg.framework */; };
 		7F92F55755B3473DB222E5E7 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 884A6DE7592C4EE0B1A9E605 /* Poppins-Thin.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		92FB11AB443D412D9C96DA74 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA9E2354B743C393570BC0 /* Poppins-BoldItalic.ttf */; };
@@ -63,21 +63,21 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = CGPower;
+			remoteInfo = atomberg;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* atombergTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "atombergTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* CGPowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGPowerTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* atombergTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = atombergTests.m; sourceTree = "<group>"; };
 		0E1B8BF0838049D291ECD299 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* atomberg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "atomberg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CGPower/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = CGPower/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CGPower/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CGPower/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CGPower/main.m; sourceTree = "<group>"; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = atomberg/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = atomberg/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = atomberg/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = atomberg/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = atomberg/main.m; sourceTree = "<group>"; };
 		1AE6820C23DE453CAB52F952 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		1E3DA997340647E68B5EABD5 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		2621FF15BCC64D26969A75F2 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		4ECDB724FABA4B5C8ABD00FD /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		5109BE1CC45D4D228F5905C8 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		5310FE292C8999B300B534C9 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		5310FE2B2C8999BF00B534C9 /* cgLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cgLoader.gif; sourceTree = "<group>"; };
+		5310FE2B2C8999BF00B534C9 /* atomLoader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = atomLoader.gif; sourceTree = "<group>"; };
 		5310FE2C2C8999BF00B534C9 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		5310FE2D2C8999BF00B534C9 /* loadingAnim.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadingAnim.gif; sourceTree = "<group>"; };
 		5310FE2E2C8999BF00B534C9 /* noData.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = noData.gif; sourceTree = "<group>"; };
@@ -215,24 +215,24 @@
 		5310FEAF2C8999BF00B534C9 /* back-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon@2x.png"; sourceTree = "<group>"; };
 		5310FEB02C8999BF00B534C9 /* back-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon@3x.png"; sourceTree = "<group>"; };
 		6ADA9E2354B743C393570BC0 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
-		79D654BA924B1589326AA749 /* Pods-CGPower-CGPowerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGPower-CGPowerTests.debug.xcconfig"; path = "Target Support Files/Pods-CGPower-CGPowerTests/Pods-CGPower-CGPowerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79D654BA924B1589326AA749 /* Pods-atomberg-atombergTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atomberg-atombergTests.debug.xcconfig"; path = "Target Support Files/Pods-atomberg-atombergTests/Pods-atomberg-atombergTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD9F36D1CDD42B4A722D9A1 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CGPower/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = atomberg/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		884A6DE7592C4EE0B1A9E605 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		8DB51198E9EA4355BC888C2C /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
-		93F16DC083E939C0851E0128 /* Pods-CGPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGPower.debug.xcconfig"; path = "Target Support Files/Pods-CGPower/Pods-CGPower.debug.xcconfig"; sourceTree = "<group>"; };
+		93F16DC083E939C0851E0128 /* Pods-atomberg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atomberg.debug.xcconfig"; path = "Target Support Files/Pods-atomberg/Pods-atomberg.debug.xcconfig"; sourceTree = "<group>"; };
 		B6BB490790024A1D944512E3 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		B7146FCA9701416BBB4981A0 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		BF597A940C684E27BC749E32 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		C3989FDBA78A1976B0B2A19A /* Pods-CGPower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGPower.release.xcconfig"; path = "Target Support Files/Pods-CGPower/Pods-CGPower.release.xcconfig"; sourceTree = "<group>"; };
-		CF6FCA42CDB4A2F3956FDE9A /* Pods_CGPower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGPower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA5C77B66CA720F9A6FF74E6 /* Pods-CGPower-CGPowerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGPower-CGPowerTests.release.xcconfig"; path = "Target Support Files/Pods-CGPower-CGPowerTests/Pods-CGPower-CGPowerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3989FDBA78A1976B0B2A19A /* Pods-atomberg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atomberg.release.xcconfig"; path = "Target Support Files/Pods-atomberg/Pods-atomberg.release.xcconfig"; sourceTree = "<group>"; };
+		CF6FCA42CDB4A2F3956FDE9A /* Pods_atomberg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atomberg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5C77B66CA720F9A6FF74E6 /* Pods-atomberg-atombergTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atomberg-atombergTests.release.xcconfig"; path = "Target Support Files/Pods-atomberg-atombergTests/Pods-atomberg-atombergTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9222AD72BA4338E006B4478 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E92D73692B3B5093009D7BC1 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
 		E92D736B2B3B50B3009D7BC1 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D736D2B3B549D009D7BC1 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = "Pods/OpenSSL-Universal/Frameworks/OpenSSL.xcframework"; sourceTree = "<group>"; };
 		E92EE8E92B4156DE00162902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E97F37B52B3AE9B500D662DB /* CGPower.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = CGPower.entitlements; path = CGPower/CGPower.entitlements; sourceTree = "<group>"; };
+		E97F37B52B3AE9B500D662DB /* atomberg.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = atomberg.entitlements; path = atomberg/atomberg.entitlements; sourceTree = "<group>"; };
 		E99B6EA22B3CA8A600D14E1F /* reacthermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = reacthermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A31A8F2C3802DA00346EF5 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		E9B14A9F2A8CDED1004DE909 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
@@ -254,10 +254,10 @@
 		E9B14AAF2A8CDED1004DE909 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		E9B14AB02A8CDED1004DE909 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		E9B14AB12A8CDED1004DE909 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
-		E9B14AC52A8E3BD2004DE909 /* CGPower-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGPower-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9B14AC52A8E3BD2004DE909 /* atomberg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atomberg-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9B14AC62A8E3BD3004DE909 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F31D36F4E1420DB71718A066 /* Pods_CGPower_CGPowerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGPower_CGPowerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31D36F4E1420DB71718A066 /* Pods_atomberg_atombergTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atomberg_atombergTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97B41FC45544F1C852F0A14 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		FEAC1C540BDA408D917124E6 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,7 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5E38DD9D034A7EC1638642 /* Pods_CGPower_CGPowerTests.framework in Frameworks */,
+				5C5E38DD9D034A7EC1638642 /* Pods_atomberg_atombergTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,20 +275,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DA81BD78AD3DD0C5C919A9 /* Pods_CGPower.framework in Frameworks */,
+				79DA81BD78AD3DD0C5C919A9 /* Pods_atomberg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* CGPowerTests */ = {
+		00E356EF1AD99517003FC87E /* atombergTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* CGPowerTests.m */,
+				00E356F21AD99517003FC87E /* atombergTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = CGPowerTests;
+			path = atombergTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -324,10 +324,10 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* CGPower */ = {
+		13B07FAE1A68108700A75B9A /* atomberg */ = {
 			isa = PBXGroup;
 			children = (
-				E97F37B52B3AE9B500D662DB /* CGPower.entitlements */,
+				E97F37B52B3AE9B500D662DB /* atomberg.entitlements */,
 				E9B14A9E2A8CDED1004DE909 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -336,7 +336,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = CGPower;
+			name = atomberg;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -347,8 +347,8 @@
 				E92D736B2B3B50B3009D7BC1 /* libReact-hermes.a */,
 				E92D73692B3B5093009D7BC1 /* hermes.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				CF6FCA42CDB4A2F3956FDE9A /* Pods_CGPower.framework */,
-				F31D36F4E1420DB71718A066 /* Pods_CGPower_CGPowerTests.framework */,
+				CF6FCA42CDB4A2F3956FDE9A /* Pods_atomberg.framework */,
+				F31D36F4E1420DB71718A066 /* Pods_atomberg_atombergTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 		5310FE302C8999BF00B534C9 /* gif */ = {
 			isa = PBXGroup;
 			children = (
-				5310FE2B2C8999BF00B534C9 /* cgLoader.gif */,
+				5310FE2B2C8999BF00B534C9 /* atomLoader.gif */,
 				5310FE2C2C8999BF00B534C9 /* loader.gif */,
 				5310FE2D2C8999BF00B534C9 /* loadingAnim.gif */,
 				5310FE2E2C8999BF00B534C9 /* noData.gif */,
@@ -587,7 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B14AC62A8E3BD3004DE909 /* File.swift */,
-				E9B14AC52A8E3BD2004DE909 /* CGPower-Bridging-Header.h */,
+				E9B14AC52A8E3BD2004DE909 /* atomberg-Bridging-Header.h */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -600,9 +600,9 @@
 				E9A31A8F2C3802DA00346EF5 /* assets */,
 				E9222AD72BA4338E006B4478 /* GoogleService-Info.plist */,
 				E92EE8E92B4156DE00162902 /* Assets.xcassets */,
-				13B07FAE1A68108700A75B9A /* CGPower */,
+				13B07FAE1A68108700A75B9A /* atomberg */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* CGPowerTests */,
+				00E356EF1AD99517003FC87E /* atombergTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -625,10 +625,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93F16DC083E939C0851E0128 /* Pods-CGPower.debug.xcconfig */,
-				C3989FDBA78A1976B0B2A19A /* Pods-CGPower.release.xcconfig */,
-				79D654BA924B1589326AA749 /* Pods-CGPower-CGPowerTests.debug.xcconfig */,
-				DA5C77B66CA720F9A6FF74E6 /* Pods-CGPower-CGPowerTests.release.xcconfig */,
+				93F16DC083E939C0851E0128 /* Pods-atomberg.debug.xcconfig */,
+				C3989FDBA78A1976B0B2A19A /* Pods-atomberg.release.xcconfig */,
+				79D654BA924B1589326AA749 /* Pods-atomberg-atombergTests.debug.xcconfig */,
+				DA5C77B66CA720F9A6FF74E6 /* Pods-atomberg-atombergTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -679,7 +679,7 @@
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
 			name = "atombergTests";
-			productName = CGPowerTests;
+			productName = atombergTests;
 			productReference = 00E356EE1AD99517003FC87E /* atombergTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -702,7 +702,7 @@
 			dependencies = (
 			);
 			name = "atomberg";
-			productName = CGPower;
+			productName = atomberg;
 			productReference = 13B07F961A680F5B00A75B9A /* atomberg.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -850,7 +850,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CGPower-CGPowerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-atomberg-atombergTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -863,15 +863,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CGPower-CGPowerTests/Pods-CGPower-CGPowerTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-atomberg-atombergTests/Pods-atomberg-atombergTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CGPower-CGPowerTests/Pods-CGPower-CGPowerTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-atomberg-atombergTests/Pods-atomberg-atombergTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CGPower-CGPowerTests/Pods-CGPower-CGPowerTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atomberg-atombergTests/Pods-atomberg-atombergTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C92962A1440377EB4C8E017A /* [CP-User] [RNFB] Crashlytics Configuration */ = {
@@ -894,15 +894,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CGPower/Pods-CGPower-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-atomberg/Pods-atomberg-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CGPower/Pods-CGPower-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-atomberg/Pods-atomberg-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CGPower/Pods-CGPower-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atomberg/Pods-atomberg-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -939,7 +939,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CGPower-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-atomberg-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -953,7 +953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* CGPowerTests.m in Sources */,
+				00E356F31AD99517003FC87E /* atombergTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,7 +980,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D654BA924B1589326AA749 /* Pods-CGPower-CGPowerTests.debug.xcconfig */;
+			baseConfigurationReference = 79D654BA924B1589326AA749 /* Pods-atomberg-atombergTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -989,7 +989,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CGPowerTests/Info.plist;
+				INFOPLIST_FILE = atombergTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1009,13 +1009,13 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA5C77B66CA720F9A6FF74E6 /* Pods-CGPower-CGPowerTests.release.xcconfig */;
+			baseConfigurationReference = DA5C77B66CA720F9A6FF74E6 /* Pods-atomberg-atombergTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 9D932R2PWR;
-				INFOPLIST_FILE = CGPowerTests/Info.plist;
+				INFOPLIST_FILE = atombergTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1035,20 +1035,20 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93F16DC083E939C0851E0128 /* Pods-CGPower.debug.xcconfig */;
+			baseConfigurationReference = 93F16DC083E939C0851E0128 /* Pods-atomberg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CGPower/CGPower.entitlements;
+				CODE_SIGN_ENTITLEMENTS = atomberg/atomberg.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9D932R2PWR;
 				ENABLE_BITCODE = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = CGPower/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CGPower;
+				INFOPLIST_FILE = atomberg/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = atomberg;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1064,7 +1064,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atomberg.genefied";
 				PRODUCT_NAME = "atomberg";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CGPower-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "atomberg-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1074,19 +1074,19 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3989FDBA78A1976B0B2A19A /* Pods-CGPower.release.xcconfig */;
+			baseConfigurationReference = C3989FDBA78A1976B0B2A19A /* Pods-atomberg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CGPower/CGPower.entitlements;
+				CODE_SIGN_ENTITLEMENTS = atomberg/atomberg.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9D932R2PWR;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = CGPower/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CGPower;
+				INFOPLIST_FILE = atomberg/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = atomberg;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1102,7 +1102,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atomberg.genefied";
 				PRODUCT_NAME = "atomberg";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CGPower-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "atomberg-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

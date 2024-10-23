@@ -1,4 +1,4 @@
 import { Image } from "react-native";
 export const gifUri = Image.resolveAssetSource(
-    require("../../assets/gif/cgLoader.gif")
+    require("../../assets/gif/atomLoader.gif")
   ).uri;

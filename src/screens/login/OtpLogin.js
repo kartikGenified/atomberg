@@ -111,7 +111,7 @@ const OtpLogin = ({ navigation, route }) => {
   };
   console.log("navigationParams", navigationParams);
   const gifUri = Image.resolveAssetSource(
-    require("../../../assets/gif/cgLoader.gif")
+    require("../../../assets/gif/atomLoader.gif")
   ).uri;
   useEffect(() => {
     fetchTerms();
@@ -296,6 +296,7 @@ const OtpLogin = ({ navigation, route }) => {
             flexDirection: "row",
           }}
         >
+          
           <TouchableOpacity
             style={{
               height: 40,
@@ -315,7 +316,19 @@ const OtpLogin = ({ navigation, route }) => {
           </TouchableOpacity>
 
           { registrationRequired && user_type!== "consumer" && (
-          <View style={{ }}>
+          <View style={{ flexDirection:'row',}}>
+                    <Image
+            style={{
+              height: 90,
+              width: 110,
+              marginRight:20,
+              resizeMode: "contain",
+            
+            }}
+            source={appIcon}
+          ></Image>
+            
+            <View style={{marginTop:10, height:65}}>
             <ButtonNavigate
               handleOperation={() => {
                 navigation.navigate("BasicInfo", {
@@ -327,7 +340,7 @@ const OtpLogin = ({ navigation, route }) => {
                   navigatingFrom: "OtpLogin",
                 });
               }}
-              backgroundColor="#075CA9"
+              backgroundColor="black"
               style={{ color: "white", fontSize: 16 }}
               content="Register"
               navigateTo="BasicInfo"
@@ -340,20 +353,13 @@ const OtpLogin = ({ navigation, route }) => {
                 navigatingFrom: "OtpLogin",
               }}
             ></ButtonNavigate>
+              </View>
+           
             
           </View>
 
         )}
-          <Image
-            style={{
-              height: 90,
-              width: 110,
-              resizeMode: "contain",
-            
-            }}
-            source={appIcon}
-          ></Image>
-            
+  
         </View>
         <View
           style={{
@@ -361,11 +367,12 @@ const OtpLogin = ({ navigation, route }) => {
             justifyContent: "center",
             marginTop: 0,
             marginLeft:12,
+
             width: "90%",
           }}
         >
           <PoppinsText
-            style={{ color: "black", fontSize: 28 }}
+            style={{ color: "black", fontSize: 28,marginLeft:5  }}
             content={t("tell us number")}
           ></PoppinsText>
         </View>
@@ -481,10 +488,10 @@ const OtpLogin = ({ navigation, route }) => {
       
       </ScrollView>
       <KeyboardAvoidingView style={{flexDirection:'row',justifyContent:'space-evenly',width:'100%'}}>
-      <View style={{alignItems:'center',justifyContent:'center'}}>
-          <Image style={{height:80,width:110,resizeMode:'contain'}} source={require('../../../assets/images/murugappa_logo.jpg')}></Image>
-        </View>
-      <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row'}}>
+      {/* <View style={{alignItems:'center',justifyContent:'center'}}>
+          <Image style={{height:80,width:110,resizeMode:'contain'}} source={require('../../../assets/images/iconG.jpg')}></Image>
+        </View> */}
+      {/* <View style={{alignItems:'center',justifyContent:'center',flexDirection:'row'}}>
             <View style={{backgroundColor:'#80C343',padding:4}}>
             <PoppinsTextMedium style={{color:'white',fontSize:24,fontWeight:'bold'}} content= "CG "></PoppinsTextMedium>
             </View>
@@ -492,7 +499,7 @@ const OtpLogin = ({ navigation, route }) => {
           <PoppinsTextMedium style={{color:'white',fontSize:24,fontWeight:'bold'}} content= "Vishwas"></PoppinsTextMedium>
             
             </View>
-        </View>
+        </View> */}
         
         </KeyboardAvoidingView>
       </View>

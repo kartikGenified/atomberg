@@ -199,7 +199,7 @@ export default function GiftCatalogue({ navigation }) {
           minWidth: 60,
           height: 40,
           padding: 10,
-          backgroundColor: '#80C343',
+          backgroundColor: ternaryThemeColor,
           alignItems: "center",
           justifyContent: "center",
           margin: 10,
@@ -259,7 +259,7 @@ export default function GiftCatalogue({ navigation }) {
             color: "black",
           }}
         ></PoppinsTextMedium>
-        <Image
+        {/* <Image
             style={{
               height: 90,
               width: 110,
@@ -271,7 +271,7 @@ export default function GiftCatalogue({ navigation }) {
 
 
             }}
-            source={appIcon}></Image>
+            source={appIcon}></Image> */}
       </View>
 
       <View

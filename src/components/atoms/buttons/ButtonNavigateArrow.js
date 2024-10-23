@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, StyleSheet, TouchableOpacity, Image } from "react-native";
 import PoppinsText from "../../electrons/customFonts/PoppinsText";
 import AnimatedDots from "../../animations/AnimatedDots";
+import { useSelector } from "react-redux";
 
 const ButtonNavigateArrow = (props) => {
   const [isClicked, setIsClicked] = useState(false)
@@ -10,6 +11,10 @@ const ButtonNavigateArrow = (props) => {
   const style = props.style;
   const isChecked = props.isChecked;
   const isLoading = props.isLoading
+
+  const ternaryThemeColor = useSelector(
+    state => state.apptheme.ternaryThemeColor,
+  )
 
   // prop to navigate to another page
   const content = props.content;
@@ -40,7 +45,7 @@ const ButtonNavigateArrow = (props) => {
         borderRadius: 4,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: isChecked ? "#80C343" : "#075CA9",
+        backgroundColor: isChecked ? ternaryThemeColor : "grey",
         margin: 10,
         paddingLeft: 20,
         paddingRight: 20,

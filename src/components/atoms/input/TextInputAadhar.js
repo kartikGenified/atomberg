@@ -44,7 +44,7 @@ const TextInputAadhar = (props) => {
     ? useSelector((state) => state.apptheme.ternaryThemeColor)
     : "grey";
   const gifUri = Image.resolveAssetSource(
-    require("../../../../assets/gif/cgLoader.gif")
+    require("../../../../assets/gif/atomLoader.gif")
   ).uri;
   Keyboard.addListener("keyboardDidShow", () => {
     setKeyboardShow(true);

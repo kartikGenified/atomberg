@@ -106,7 +106,7 @@ const Dashboard = ({ navigation }) => {
     : "#FFB533";
 
   const gifUri = Image.resolveAssetSource(
-    require("../../../assets/gif/cgLoader.gif")
+    require("../../../assets/gif/atomLoader.gif")
   ).uri;
   // console.log("pointSharingData", JSON.stringify(pointSharingData), userData)
   // console.log("user id is from dashboard", userId)
@@ -587,7 +587,7 @@ const Dashboard = ({ navigation }) => {
           <View style={{ height: 200, width: "100%", marginBottom: 20 }}>
             {bannerArray && 
             <TouchableWithoutFeedback onPress={()=>{
-              Linking.openURL("https://www.cgglobal.com/")
+              Linking.openURL("https://atomberg.com/?srsltid=AfmBOoo109X6bdEhnCgaMe0l88i-3FqCwuhUTvIairZSb8A-d8FWOP4k")
             }}>
               <View>
             <Banner images={bannerArray}></Banner>
@@ -718,7 +718,7 @@ const Dashboard = ({ navigation }) => {
               data={dashboardData}
             ></DashboardMenuBox>
           )}
-          {/* <View
+          <View
             style={{
               alignItems: "center",
               justifyContent: "flex-end",
@@ -727,8 +727,8 @@ const Dashboard = ({ navigation }) => {
               marginBottom: 40,
             }}
           >
-            
-              <View
+            {showLink &&
+                <View
                 style={{
                   alignItems: "center",
                   justifyContent: "space-evenly",
@@ -749,7 +749,7 @@ const Dashboard = ({ navigation }) => {
                             <TouchableOpacity
                               onPress={() => {
                                 Linking.openURL(
-                                  "https://www.facebook.com/people/CG-Industrial-Division/100066535583616/"
+                                  "https://www.facebook.com/gorillafans/"
                                 );
                               }}
                             >
@@ -801,7 +801,7 @@ const Dashboard = ({ navigation }) => {
                             <TouchableOpacity
                               onPress={() => {
                                 Linking.openURL(
-                                  "https://www.linkedin.com/company/10324/admin/"
+                                  "https://www.linkedin.com/company/atomberg-technologies-private-limited?originalSubdomain=in"
                                 );
                               }}
                             >
@@ -840,7 +840,7 @@ const Dashboard = ({ navigation }) => {
                             <TouchableOpacity
                               onPress={() => {
                                 Linking.openURL(
-                                  "https://www.youtube.com/channel/UCEWSZGFJBWEFOPxQ0yPIQWg?app=desktop"
+                                  "https://www.youtube.com/@atombergtechnologies2722"
                                 );
                               }}
                             >
@@ -879,7 +879,7 @@ const Dashboard = ({ navigation }) => {
                             <TouchableOpacity
                               onPress={() => {
                                 Linking.openURL(
-                                  "https://www.instagram.com/cg_industrialdivision/"
+                                  "https://www.instagram.com/atomberg/?hl=en"
                                 );
                               }}
                             >
@@ -906,7 +906,7 @@ const Dashboard = ({ navigation }) => {
                           return (
                             <TouchableOpacity
                               onPress={() => {
-                                Linking.openURL("https:www.cgglobal.com/");
+                                Linking.openURL("https://atomberg.com/?srsltid=AfmBOorw3qIK3s-1uwOLbUND4U5W03fa3GvTH3dNrs1MDItoalKVRLze");
                               }}
                             >
                               <View
@@ -934,6 +934,9 @@ const Dashboard = ({ navigation }) => {
                 /> 
               </View>
           
+            }
+            
+          
             <TouchableWithoutFeedback
               onPress={() => {
                 setShowLink(!showLink);
@@ -953,7 +956,7 @@ const Dashboard = ({ navigation }) => {
                 <Link name="sharealt" color={"white"} size={30}></Link>
               </View>
             </TouchableWithoutFeedback>
-          </View> */}
+          </View>
           {userPointIsLoading && (
             <View>
               <Text style={{ color: "black", fontSize: 10 }}>
@@ -978,12 +981,12 @@ const Dashboard = ({ navigation }) => {
           <View style={{ width: '100%', alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
             {showKyc && <KYCVerificationComponent buttonTitle={t("Complete Your KYC")} title={t("Your KYC is not completed")}></KYCVerificationComponent>}
           </View>
-          {/* <View style={{ flexDirection: "row", width: '100%', alignItems: "center", justifyContent: 'space-evenly' }}>
+          <View style={{ flexDirection: "row", width: '100%', alignItems: "center", justifyContent: 'space-evenly' }}>
             {(userData.user_type).toLowerCase()!=="sales" &&<DashboardSupportBox title={t("rewards")} text="Rewards" backgroundColor="#D9C7B6" borderColor="#FEE8D4" image={require('../../../assets/images/reward_dashboard.png')} ></DashboardSupportBox>}
             <DashboardSupportBox title={t("customer support")} text="Customer Support" backgroundColor="#BCB5DC" borderColor="#E4E0FC" image={require('../../../assets/images/support.png')} ></DashboardSupportBox>
             <DashboardSupportBox title={t("feedback")} text="Feedback" backgroundColor="#D8C8C8" borderColor="#FDDADA" image={require('../../../assets/images/feedback.png')} ></DashboardSupportBox>
 
-          </View> */}
+          </View>
           {/* <Button
         title="Add To Basket"
         onPress={async () =>

@@ -55,7 +55,7 @@ const PointHistory = ({ navigation }) => {
 
 
 
-    const gifUri = Image.resolveAssetSource(require('../../../assets/gif/cgLoader.gif')).uri;
+    const gifUri = Image.resolveAssetSource(require('../../../assets/gif/atomLoader.gif')).uri;
     const noData = Image.resolveAssetSource(require('../../../assets/gif/noData.gif')).uri;
     let startDate,endDate
     useEffect(() => {

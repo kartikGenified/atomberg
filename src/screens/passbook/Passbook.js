@@ -296,7 +296,7 @@ const Passbook = ({ navigation }) => {
                         {/* <TouchableOpacity style={{marginLeft:'50%'}}>
             <Image style={{height:30,width:30,resizeMode:'contain'}} source={require('../../../assets/images/notificationOn.png')}></Image>
             </TouchableOpacity> */}
-            <Image
+            {/* <Image
             style={{
               height: 90,
               width: 110,
@@ -305,7 +305,7 @@ const Passbook = ({ navigation }) => {
              right:10
             }}
             source={appIcon}
-          ></Image>
+          ></Image> */}
                     </View>
                     {/* name and membership */}
                     {/* --------------------------- */}
@@ -497,7 +497,7 @@ const Passbook = ({ navigation }) => {
             {PlatinumModalOpen && <PlatinumModal isVisible={PlatinumModalOpen} onClose={closePlatinumModal} getActiveMembershipData={getActiveMembershipData} />}
            
         </ScrollView>
-        <View style={{alignItems:'center',justifyContent:'center',position:'absolute',bottom:20, right:15,flexDirection:'row'}}>
+        {/* <View style={{alignItems:'center',justifyContent:'center',position:'absolute',bottom:20, right:15,flexDirection:'row'}}>
             <View style={{backgroundColor:'#80C343',padding:4}}>
             <PoppinsTextMedium style={{color:'white',fontSize:24,fontWeight:'bold'}} content= "CG "></PoppinsTextMedium>
             </View>
@@ -505,10 +505,10 @@ const Passbook = ({ navigation }) => {
           <PoppinsTextMedium style={{color:'white',fontSize:24,fontWeight:'bold'}} content= "Vishwas"></PoppinsTextMedium>
             
             </View>
-        </View>
-        <View style={{alignItems:'center',justifyContent:'center',position:'absolute',bottom:4,left:30}}>
+        </View> */}
+        {/* <View style={{alignItems:'center',justifyContent:'center',position:'absolute',bottom:4,left:30}}>
           <Image style={{height:80,width:110,resizeMode:'contain'}} source={require('../../../assets/images/murugappa_logo.jpg')}></Image>
-        </View>
+        </View> */}
         </View>
     );
 }
