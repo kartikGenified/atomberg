@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "CG Vishwas.app"
-               BlueprintName = "CG Vishwas"
-               ReferencedContainer = "container:CG Vishwas.xcodeproj">
+               BuildableName = "atomberg.app"
+               BlueprintName = "atomberg"
+               ReferencedContainer = "container:atomberg.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "CG VishwasTests.xctest"
-               BlueprintName = "CG VishwasTests"
-               ReferencedContainer = "container:CG Vishwas.xcodeproj">
+               BuildableName = "atombergTests.xctest"
+               BlueprintName = "atombergTests"
+               ReferencedContainer = "container:atomberg.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "CG Vishwas.app"
-            BlueprintName = "CG Vishwas"
-            ReferencedContainer = "container:CG Vishwas.xcodeproj">
+            BuildableName = "atomberg.app"
+            BlueprintName = "atomberg"
+            ReferencedContainer = "container:atomberg.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "CG Vishwas.app"
-            BlueprintName = "CG Vishwas"
-            ReferencedContainer = "container:CG Vishwas.xcodeproj">
+            BuildableName = "atomberg.app"
+            BlueprintName = "atomberg"
+            ReferencedContainer = "container:atomberg.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

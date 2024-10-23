@@ -832,7 +832,7 @@ const Splash = ({ navigation }) => {
   //               text: "Update",
   //               onPress: () =>
   //                 Linking.openURL(
-  //                   "https://play.google.com/store/apps/details?id=com.crompton.greaves"
+  //                   "https://play.google.com/store/apps/details?id=com.atomberg.genefied"
   //                 ),
   //             },
   //           ]
@@ -848,7 +848,7 @@ const Splash = ({ navigation }) => {
   //               text: "Update",
   //               onPress: () =>
   //                 Linking.openURL(
-  //                   "https://play.google.com/store/apps/details?id=com.crompton.greaves"
+  //                   "https://play.google.com/store/apps/details?id=com.atomberg.genefied"
   //                 ),
   //             },
   //           ]

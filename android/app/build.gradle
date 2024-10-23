@@ -75,9 +75,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.crompton.greaves"
+    namespace "com.atomberg.genefied"
     defaultConfig {
-        applicationId "com.crompton.greaves"
+        applicationId "com.atomberg.genefied"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 9

@@ -1,4 +1,4 @@
-package com.crompton.greaves;
+package com.atomberg.genefied;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
